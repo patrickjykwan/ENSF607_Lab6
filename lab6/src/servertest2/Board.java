@@ -8,6 +8,9 @@ import java.io.Serializable;
  * Provide the data fields and methods to create a Java data-type representing a board in a game of tic tac toe.
  * The board stores a 3x3 array that represents itself. It keeps track of the number of markers on the board
  * which is used by the Player object to determine if a game should be stopped.
+ * <p>
+ * As a readjustment to this class for Board is to make it serializable so it can be 
+ * pass between clients and servers.
  * 
  * @author Patrick Kwan
  * @version 1.0

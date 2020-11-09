@@ -12,6 +12,9 @@ import java.util.Scanner;
  * <p>
  * Player plays the game by making moves, placing markers in an appropriate coordinate point on the board.
  * The player also determines whether or not their opponent has won or if they have tied.
+ * <p>
+ * New functionality for lab 6 is to make Player serializable such that it can be transfered
+ * between the client and the server.
  * 
  * @author Patrick Kwan
  * @version 1.0

@@ -8,6 +8,8 @@ import java.net.Socket;
  * played on along with a referee who starts the game and determines the play order of the players. Game is
  * responsible for setting up the game starting with the board, than its referee, than its players. 
  * 
+ * New functionality for Lab 6 is to make Game runnable.
+ * 
  * @author Patrick Kwan
  * @version 1.0
  * @since September 28 2020

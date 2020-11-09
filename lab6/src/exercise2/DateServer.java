@@ -9,10 +9,33 @@ import java.net.Socket;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+/**
+ * Provides data fields and methods to create a Java server that communicates with a client to return the DATE or TIME.
+ * @author Patrick Kwan
+ * @version 1.0
+ * @since November 9, 2020
+ *
+ */
 public class DateServer {
+	
+	/**
+	 * This is the socket that the server uses to take inputs from client 
+	 */
 	private BufferedReader socketInput;
+	
+	/**
+	 * This is the socket that the server outputs to to communicate with the client.
+	 */
 	private PrintWriter socketOutput;
+	
+	/**
+	 * This is the socket that the server is being hosted on.
+	 */
 	private ServerSocket serverSocket;
+	
+	/**
+	 * This is the socket of the client that the server accepts. It is the accepted socket.
+	 */
 	private Socket aSocket;
 
 	/**

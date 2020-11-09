@@ -8,6 +8,10 @@ import java.net.Socket;
 /**
  * Provides data fields and methods to create a Java data-type, representing a referee in a game of tic tac toe.
  * A referee selects the opponents for each player, starts the game and managing turns. 
+ * <p>
+ * Added functionality for lab 6 is to readjust referee to manage the information passing between
+ * the two clients. Namely updating the boards in player objects when a player object is received from a client
+ * after they play their moves. And sending those player objects to the corresponding players whose turn is next.
  * 
  * @author Patrick Kwan
  * @version 1.0
@@ -58,7 +62,7 @@ public class Referee {
 	}
 	
 	/**
-	 * 
+	 * This is the constructor used to create the referee and store the accepted sockets.
 	 */
 	public Referee(Socket aSocket, Socket bSocket) {
 		xPlayer= null;
@@ -70,7 +74,8 @@ public class Referee {
 	
 	/**
 	 * This method sets the player's opponents, starts the game, does the initial display of the board and
-	 * manages turn order.
+	 * manages turn order. Update player boards after every turn and manages turn order by selectively
+	 * sending and receiving  player objects to and from the corresponding clients. 
 	 * @throws IOException 
 	 * @throws ClassNotFoundException 
 	 */

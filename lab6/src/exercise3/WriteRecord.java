@@ -3,7 +3,10 @@ package exercise3;
 /**
  * Started by M. Moussavi
  * March 2015
- * Completed by: STUDENT(S) NAME
+ * Completed by:
+ * @author Patrick Kwan
+ * @version 1.0
+ * @since November 9, 2020
  */
 
 import java.io.FileInputStream;
